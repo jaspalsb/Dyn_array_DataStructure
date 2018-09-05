@@ -92,26 +92,22 @@ void addDynArr(DynArr *v, TYPE val)
 
 	v->data[v->size] = val;
 	v->size++;
-	/* FIXME: You will write this function */
+	
 }
 
 TYPE getDynArr(DynArr *v, int pos)
 {
-	/* FIXME: You will write this function */
-
-	/* FIXME: you must change this return value */
+	
 	/*super simple fix just since all this function does is "get" data at certain pos in array*/
 	return v->data[pos];
 }
 void putDynArr(DynArr *v, int pos, TYPE val)
 {
-	/* FIXME: You will write this function */
 	v->data[pos] = val;
 }
 
 void swapDynArr(DynArr *v, int i, int  j)
 {
-	/* FIXME: You will write this function */
 	TYPE holder;
 	holder = v->data[i];
 
@@ -121,7 +117,6 @@ void swapDynArr(DynArr *v, int i, int  j)
 
 void removeAtDynArr(DynArr *v, int idx)
 {
-	/* FIXME: You will write this function */
 	assert((idx >= 0) && (idx < (v->size)));
 	while (idx < v->size)
 	{
@@ -133,9 +128,6 @@ void removeAtDynArr(DynArr *v, int idx)
 
 int isEmptyDynArr(DynArr *v)
 {
-	/* FIXME: You will write this function */
-
-	/* FIXME:  You will change this return value*/
 	/*very simple stack operation that returns 1 for true and 0 for false*/
 	if (v->size == 0)
 	{
@@ -149,7 +141,6 @@ int isEmptyDynArr(DynArr *v)
 }
 void pushDynArr(DynArr *v, TYPE val)
 {
-	/* FIXME: You will write this function */
 	/*pushing is very simple it adds to the top of the stack which will be the last element in dyn array*/
 	assert(v != 0);
 	addDynArr(v, val);
@@ -158,9 +149,6 @@ void pushDynArr(DynArr *v, TYPE val)
 
 TYPE topDynArr(DynArr *v)
 {
-	/* FIXME: You will write this function */
-
-	/* FIXME: You will change this return value*/
 	/*returning the top would mean getting the last element index -1*/
 
 	assert(v != 0);
@@ -172,7 +160,6 @@ TYPE topDynArr(DynArr *v)
 
 void popDynArr(DynArr *v)
 {
-	/* FIXME: You will write this function */
 	assert(v != 0);
 	assert(!isEmptyDynArr(v));
 	TYPE _size = v->size;
@@ -182,9 +169,6 @@ void popDynArr(DynArr *v)
 
 int containsDynArr(DynArr *v, TYPE val)
 {
-	/* FIXME: You will write this function */
-
-	/* FIXME:  You will change this return value */
 	/*with bags the array is unsorted since data is just put in anywhere.
 	That is why i need to iterate through entire dynarray.*/
 	for (int index = 0; index < v->size; index++)
@@ -199,7 +183,6 @@ int containsDynArr(DynArr *v, TYPE val)
 
 void removeDynArr(DynArr *v, TYPE val)
 {
-	/* FIXME: You will write this function */
 	/*removing from bag is bit tricky, but with the removeAtdynArray function it makes it
 	easier. First I loop to find the data to remove. Then once I find it I call the remove
 	function and return to the caller. */
