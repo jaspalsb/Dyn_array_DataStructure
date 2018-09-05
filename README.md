@@ -1,2 +1,2 @@
 # Dyn_array_DataStructure
-Bag and stack implemented with dynamic array
+Bag and stack abstract data type implemented with dynamic array
