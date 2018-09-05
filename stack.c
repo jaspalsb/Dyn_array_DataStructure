@@ -40,7 +40,6 @@ post:
 */
 int isBalanced(char* s)
 {
-	/* FIXME: You will write this function */
 	/*using the same format from the testdynArray.c file*/
 	DynArr *dyn;
 	dyn = newDynArr(2);
