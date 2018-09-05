@@ -72,8 +72,6 @@ void _dynArrSetCapacity(DynArr *v, int newCap)
 	v->size = _size;
 	free(_data);
 
-	/* FIXME: You will write this function */
-
 }
 
 int sizeDynArr(DynArr *v)
